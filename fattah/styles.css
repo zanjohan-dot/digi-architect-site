@@ -376,6 +376,26 @@ img {
   white-space: nowrap;
 }
 
+/* Row labels (DSA and Muslim-Friendly groups) */
+
+.row-label {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.row-label + .contact-row {
+  margin-top: 10px;
+}
+
+.contact-row--grouped {
+  margin-bottom: 4px;
+}
+
 /* Bottom website */
 
 .site-link {
@@ -639,6 +659,10 @@ img {
   .social-caption {
     width: 56px;
     font-size: 0.5rem;
+  }
+  .row-label {
+    margin-top: 14px;
+    font-size: 0.56rem;
   }
 
   .modal {

@@ -158,7 +158,8 @@
           </a>
         </section>
 
-        <nav class="contact-row" aria-label="Contact links">
+        <p class="row-label" id="dsa-row-label">The Digital Systems Architect</p>
+        <nav class="contact-row contact-row--grouped" aria-labelledby="dsa-row-label">
           <a
             class="social-button"
             href="https://wa.me/6589835389"
@@ -189,58 +190,89 @@
           >
             <i class="bi bi-linkedin" aria-hidden="true"></i>
           </a>
+        </nav>
 
-          <button
-            class="social-button"
-            type="button"
-            data-open-instagram
-            aria-label="Open Muslim Friendly SG Instagram QR code"
-          >
-            <i class="bi bi-instagram" aria-hidden="true"></i>
-          </button>
+        <p class="row-label" id="mf-row-label">Muslim-Friendly initiatives</p>
+        <nav class="contact-row" aria-labelledby="mf-row-label">
+          <div class="social-item">
+            <a
+              class="social-button"
+              href="https://digi-architect.studio/muslim-friendly-advisory"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open Muslim-Friendly Advisory"
+              data-mf-advisory-link
+            >
+              <i class="bi bi-briefcase" aria-hidden="true"></i>
+            </a>
+            <span class="social-caption">Advisory</span>
+          </div>
 
-          <a
-            class="social-button"
-            href="https://www.facebook.com/people/muslimfriendlysg/61591905841478/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Open Muslim Friendly SG Facebook"
-            data-facebook-link
-          >
-            <i class="bi bi-facebook" aria-hidden="true"></i>
-          </a>
+          <div class="social-item">
+            <a
+              class="social-button"
+              href="https://digi-architect.studio/muslim-friendly-directory"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open Muslim-Friendly Dining Directory"
+              data-mf-directory-link
+            >
+              <i class="bi bi-journal-bookmark" aria-hidden="true"></i>
+            </a>
+            <span class="social-caption">Directory</span>
+          </div>
 
-          <a
-            class="social-button"
-            href="https://www.youtube.com/@muslim.friendly.studio"
-            target="_blank"
-            rel="noopener"
-            aria-label="Open Muslim Friendly SG YouTube"
-            data-youtube-link
-          >
-            <i class="bi bi-youtube" aria-hidden="true"></i>
-          </a>
+          <div class="social-item">
+            <a
+              class="social-button"
+              href="https://www.instagram.com/muslim.friendly/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open Muslim.friendly on Instagram (@muslim.friendly)"
+              data-mf-instagram-link
+            >
+              <i class="bi bi-instagram" aria-hidden="true"></i>
+            </a>
+            <span class="social-caption">Instagram</span>
+          </div>
 
-          <a
-            class="social-button"
-            href="https://digi-architect.studio/muslim-friendly-directory#hero"
-            target="_blank"
-            rel="noopener"
-            aria-label="Open Muslim Friendly Directory"
-            data-directory-link
-          >
-            <i class="bi bi-journal-bookmark" aria-hidden="true"></i>
-          </a>
+          <div class="social-item">
+            <a
+              class="social-button"
+              href="https://www.facebook.com/profile.php?id=61591905841478"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open Muslim.friendly on Facebook"
+              data-mf-facebook-link
+            >
+              <i class="bi bi-facebook" aria-hidden="true"></i>
+            </a>
+            <span class="social-caption">Facebook</span>
+          </div>
+
+          <div class="social-item">
+            <a
+              class="social-button"
+              href="https://www.youtube.com/@muslim.friendly.studio"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open Muslim-Friendly on YouTube"
+              data-mf-youtube-link
+            >
+              <i class="bi bi-youtube" aria-hidden="true"></i>
+            </a>
+            <span class="social-caption">YouTube</span>
+          </div>
         </nav>
 
         <a
           class="site-link"
-          href="https://digi-architect.studio/muslim-friendly-advisory#showcase"
+          href="https://digi-architect.studio"
           target="_blank"
           rel="noopener"
           data-website-link
         >
-          digi-architect.studio/muslim-friendly-advisory
+          digi-architect.studio
         </a>
       </article>
     </main>
@@ -278,47 +310,6 @@
 
         <button class="modal-copy" type="button" data-modal-copy-link>
           Copy link
-        </button>
-      </div>
-    </dialog>
-
-    <dialog
-      class="modal"
-      data-instagram-modal
-      aria-labelledby="instagram-modal-title"
-    >
-      <div class="modal-card">
-        <header class="modal-top">
-          <h2 id="instagram-modal-title">Instagram</h2>
-
-          <button
-            class="modal-close"
-            type="button"
-            data-close-instagram
-            aria-label="Close Instagram QR code"
-          >
-            <i class="bi bi-x-lg" aria-hidden="true"></i>
-          </button>
-        </header>
-
-        <img
-          class="instagram-qr"
-          src="assets/instagram-qr.png"
-          alt="Instagram QR code for Muslim Friendly SG"
-        />
-
-        <a
-          class="modal-url"
-          href="https://www.instagram.com/muslim.friendly.sg/"
-          target="_blank"
-          rel="noopener"
-          data-instagram-link
-        >
-          instagram.com/muslim.friendly.sg
-        </a>
-
-        <button class="modal-copy" type="button" data-copy-instagram>
-          Copy Instagram link
         </button>
       </div>
     </dialog>

@@ -27,14 +27,15 @@ const CONTACT = {
   whatsappNumber: "6589835389",
   email: "fattah@digi-architect.studio",
 
-  website: "https://digi-architect.studio/muslim-friendly-advisory#showcase",
+  website: "https://digi-architect.studio",
   cardUrl: "https://digi-architect.studio/fattah/",
 
   linkedinCompany: "https://www.linkedin.com/company/the-digital-systems-architect",
-  instagram: "https://www.instagram.com/muslim.friendly.sg/",
-  facebook: "https://www.facebook.com/people/muslimfriendlysg/61591905841478/",
+  instagram: "https://www.instagram.com/muslim.friendly/",
+  facebook: "https://www.facebook.com/profile.php?id=61591905841478",
   youtube: "https://www.youtube.com/@muslim.friendly.studio",
-  directory: "https://digi-architect.studio/muslim-friendly-directory#hero",
+  directory: "https://digi-architect.studio/muslim-friendly-directory",
+  advisory: "https://digi-architect.studio/muslim-friendly-advisory",
 };
 
 const SELECTOR = {
@@ -178,7 +179,7 @@ function buildVCard() {
     `EMAIL;TYPE=INTERNET:${escapeVCard(CONTACT.email)}`,
 
     `item1.URL:${escapeVCard(CONTACT.website)}`,
-    "item1.X-ABLabel:Muslim Friendly Advisory",
+    "item1.X-ABLabel:Website",
 
     `item2.URL:${escapeVCard(CONTACT.cardUrl)}`,
     "item2.X-ABLabel:Digital Card",
@@ -186,27 +187,31 @@ function buildVCard() {
     `item3.URL:${escapeVCard(CONTACT.linkedinCompany)}`,
     "item3.X-ABLabel:LinkedIn Company",
 
-    `item4.URL:${escapeVCard(CONTACT.instagram)}`,
-    "item4.X-ABLabel:Instagram",
+    `item4.URL:${escapeVCard(CONTACT.advisory)}`,
+    "item4.X-ABLabel:Muslim-Friendly Advisory",
 
-    `item5.URL:${escapeVCard(CONTACT.facebook)}`,
-    "item5.X-ABLabel:Facebook",
+    `item5.URL:${escapeVCard(CONTACT.directory)}`,
+    "item5.X-ABLabel:Muslim-Friendly Dining Directory",
 
-    `item6.URL:${escapeVCard(CONTACT.youtube)}`,
-    "item6.X-ABLabel:YouTube",
+    `item6.URL:${escapeVCard(CONTACT.instagram)}`,
+    "item6.X-ABLabel:Muslim-Friendly Instagram",
 
-    `item7.URL:${escapeVCard(CONTACT.directory)}`,
-    "item7.X-ABLabel:Muslim Friendly Directory",
+    `item7.URL:${escapeVCard(CONTACT.facebook)}`,
+    "item7.X-ABLabel:Muslim-Friendly Facebook",
+
+    `item8.URL:${escapeVCard(CONTACT.youtube)}`,
+    "item8.X-ABLabel:Muslim-Friendly YouTube",
 
     `NOTE:${escapeVCard(
       [
         `Digital card: ${CONTACT.cardUrl}`,
         `Website: ${CONTACT.website}`,
         `LinkedIn Company: ${CONTACT.linkedinCompany}`,
-        `Instagram: ${CONTACT.instagram}`,
-        `Facebook: ${CONTACT.facebook}`,
-        `YouTube: ${CONTACT.youtube}`,
-        `Muslim Friendly Directory: ${CONTACT.directory}`,
+        `Muslim-Friendly Advisory: ${CONTACT.advisory}`,
+        `Muslim-Friendly Dining Directory: ${CONTACT.directory}`,
+        `Muslim-Friendly Instagram: ${CONTACT.instagram}`,
+        `Muslim-Friendly Facebook: ${CONTACT.facebook}`,
+        `Muslim-Friendly YouTube: ${CONTACT.youtube}`,
       ].join("\n")
     )}`,
 

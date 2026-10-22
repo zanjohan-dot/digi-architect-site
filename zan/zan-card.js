@@ -34,6 +34,12 @@ const CONTACT = {
   linkedinPersonal: "https://www.linkedin.com/in/zanjohan",
   instagram: "https://www.instagram.com/digital.systems.architect",
   facebook: "https://www.facebook.com/share/17tceLy88Z/?mibextid=wwXIfr",
+
+  mfAdvisory: "https://digi-architect.studio/muslim-friendly-advisory",
+  mfDirectory: "https://digi-architect.studio/muslim-friendly-directory",
+  mfInstagram: "https://www.instagram.com/muslim.friendly/",
+  mfFacebook: "https://www.facebook.com/profile.php?id=61591905841478",
+  mfYoutube: "https://www.youtube.com/@muslim.friendly.studio",
 };
 
 const SELECTOR = {
@@ -192,6 +198,21 @@ function buildVCard() {
     `item6.URL:${escapeVCard(CONTACT.facebook)}`,
     "item6.X-ABLabel:Facebook",
 
+    `item7.URL:${escapeVCard(CONTACT.mfAdvisory)}`,
+    "item7.X-ABLabel:Muslim-Friendly Advisory",
+
+    `item8.URL:${escapeVCard(CONTACT.mfDirectory)}`,
+    "item8.X-ABLabel:Muslim-Friendly Dining Directory",
+
+    `item9.URL:${escapeVCard(CONTACT.mfInstagram)}`,
+    "item9.X-ABLabel:Muslim-Friendly Instagram",
+
+    `item10.URL:${escapeVCard(CONTACT.mfFacebook)}`,
+    "item10.X-ABLabel:Muslim-Friendly Facebook",
+
+    `item11.URL:${escapeVCard(CONTACT.mfYoutube)}`,
+    "item11.X-ABLabel:Muslim-Friendly YouTube",
+
     `NOTE:${escapeVCard(
       [
         `Digital card: ${CONTACT.cardUrl}`,
@@ -200,6 +221,11 @@ function buildVCard() {
         `LinkedIn Personal: ${CONTACT.linkedinPersonal}`,
         `Instagram: ${CONTACT.instagram}`,
         `Facebook: ${CONTACT.facebook}`,
+        `Muslim-Friendly Advisory: ${CONTACT.mfAdvisory}`,
+        `Muslim-Friendly Dining Directory: ${CONTACT.mfDirectory}`,
+        `Muslim-Friendly Instagram: ${CONTACT.mfInstagram}`,
+        `Muslim-Friendly Facebook: ${CONTACT.mfFacebook}`,
+        `Muslim-Friendly YouTube: ${CONTACT.mfYoutube}`,
       ].join("\n")
     )}`,
 
